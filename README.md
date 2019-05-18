@@ -31,7 +31,7 @@ python2 manage.py runserver
 ```
 
 ## Configure
-Configure file: faces/faces.conf
+Configure file: faces/faces.conf <br>
 Default image search directory: media/SearchDir
 
 In phase 2 we plan to implement IBM analytics to web crawl though twitter and find tweets about lost pets and add that information to our database
