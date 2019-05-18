@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Display Uploaded Images</title>
+    </head>
+
+    <body>
+        {% if img_list %}
+            {% for img in img_list %}
+                <img src="{{ MEDIA_URL }}{{img}}">
+            {% endfor %}
+        {% endif %}
+    </body>
+</html>
