@@ -20,6 +20,7 @@ git clone git@github.com:Fnjn/goldenRetriever.git
 pip2 install -r requirements.txt
 
 git clone git@github.com:davidsandberg/facenet.git
+export PYTHONPATH=[path-to-facenet]/src:$PYTHONPATH
 # Add namescope to facenet.create_input_pipeline
 # See https://github.com/davidsandberg/facenet/issues/852#issuecomment-431420493
 ```
