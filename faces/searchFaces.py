@@ -84,7 +84,7 @@ class SearchFaces:
         dist = self.computeDist(emb1, emb2)
         if dist < 0.6:
             res = 1
-        elif dist < 1.1:
+        elif dist < self.threshold:
             k = -0.25 / (self.threshold - 0.5)
             res = k * (dist-0.5) + 1
         elif dist < 3.0:

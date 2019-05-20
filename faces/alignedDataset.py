@@ -8,6 +8,7 @@ def evaluate(embeddings, threshold=1.1):
     dist = np.sum(np.square(diff),1)
     #dist = np.sum(diff,1)
     predict_issame = np.less(dist, threshold)
+    print(dist)
     return predict_issame, dist
 
 def get_paths(facedir, filenames, file_ext):
