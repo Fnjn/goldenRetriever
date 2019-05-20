@@ -20,6 +20,7 @@ git clone git@github.com:Fnjn/goldenRetriever.git
 pip2 install -r requirements.txt
 
 git clone git@github.com:davidsandberg/facenet.git
+export PYTHONPATH=[path-to-facenet]/src:$PYTHONPATH
 # Add namescope to facenet.create_input_pipeline
 # See https://github.com/davidsandberg/facenet/issues/852#issuecomment-431420493
 ```
@@ -31,7 +32,7 @@ python2 manage.py runserver
 ```
 
 ## Configure
-Configure file: faces/faces.conf
+Configure file: faces/faces.conf <br>
 Default image search directory: media/SearchDir
 
 In phase 2 we plan to implement IBM analytics to web crawl though twitter and find tweets about lost pets and add that information to our database
